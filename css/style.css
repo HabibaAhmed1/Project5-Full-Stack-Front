@@ -1,0 +1,146 @@
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-item {
+    position: relative;
+    color: #405047;
+    font-weight: 500;
+    padding: 29px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #3f7130;
+}
+
+
+/* الخط */
+
+.nav-item span {
+    position: absolute;
+    left: 50%;
+    bottom: 21px;
+
+    width: 0;
+    height: 2px;
+
+    background: #3f7130;
+    border-radius: 20px;
+
+    transform: translateX(-50%);
+
+    transition:
+        width 0.3s ease;
+}
+
+
+.nav-item:hover span {
+    width: 100%;
+}
+
+
+/* Home */
+
+.nav-item.active {
+    color: #3f7130;
+    font-weight: 600;
+}
+
+.nav-item.active span {
+    width: 100%;
+}
+
+
+
+/* =========================
+   HEADER ICONS
+========================= */
+
+.header-icon {
+    position: relative;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #34463c;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.header-icon:hover {
+    background: #eef3e9;
+    color: #3f7130;
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================
+   COUNTER
+========================= */
+
+.counter {
+    position: absolute;
+
+    top: 1px;
+    right: 0;
+
+    min-width: 17px;
+    height: 17px;
+
+    padding: 0 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #4d7830;
+
+    color: white;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    border-radius: 50%;
+
+    border: 2px solid #fffefa;
+}
+
+
+
+/* =========================
+   MOBILE LINKS
+========================= */
+
+.mobile-link {
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    color: #405047;
+
+    font-weight: 500;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        padding-left 0.3s ease;
+}
+
+
+.mobile-link:hover {
+    background: #eef3e9;
+    color: #3f7130;
+    padding-left: 21px;
+}
